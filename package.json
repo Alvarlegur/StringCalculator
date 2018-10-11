@@ -1,0 +1,26 @@
+{
+  "name": "stringcalc",
+  "version": "1.0.0",
+  "description": "Test Driven Development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alvarlegur/StringCalculator.git"
+  },
+  "keywords": [
+    "string",
+    "calc"
+  ],
+  "author": "Halldór Alvar Kjartansson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alvarlegur/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/Alvarlegur/StringCalculator#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
