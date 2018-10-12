@@ -31,7 +31,7 @@ var StringCalculator = {
             negCounter++;
             theresANegativeNumber = true;
             }
-          else{
+          else if(numberArr[i] < 1000){
             sum += parseInt(numberArr[i]);
           }
         }

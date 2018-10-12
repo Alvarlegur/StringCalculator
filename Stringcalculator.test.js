@@ -26,3 +26,7 @@ test("New lines between numbers in parameter", () => {
 test("Negative number in parameter", () => {
   expect(string_calculator.Add("-1,4")).toBe("Negatives not allowed: -1");
 });
+
+test("Numbers bigger than 1000", () => {
+  expect(string_calculator.Add("1003,4")).toBe(4);
+});
