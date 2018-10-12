@@ -18,3 +18,7 @@ test("Two numbers in parameter", () => {
 test("Unknown number of arguments in parameter", () => {
   expect(string_calculator.Add("5,9,10,23,16")).toBe(63);
 });
+
+test("New lines between numbers in parameter", () => {
+  expect(string_calculator.Add("5\n2,6")).toBe(13);
+});
