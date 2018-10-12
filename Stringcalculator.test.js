@@ -8,5 +8,9 @@ test("Empty string returns zero", () => {
 });
 
 test("one number in parameter", () => {
-  expect(string_calculator.Add("4")).toBe("4");
+  expect(string_calculator.Add("4")).toBe(4);
+});
+
+test("Two numbers in parameter", () => {
+  expect(string_calculator.Add("5,9")).toBe(14);
 });

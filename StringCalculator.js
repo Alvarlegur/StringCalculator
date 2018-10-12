@@ -6,13 +6,20 @@ var StringCalculator = {
       return 0;
     }
     else {
-      var sum = 0;
-      sum = numbers;
-    }
+    var numberArr = numbers.split(",");
+    var sum = 0;
+      if (numberArr.length == 1){
+        sum = numberArr[0];
+        return parseInt(sum);
+        }
+        else{
+          for(i = 0; i < numberArr.length; i++){
+            sum += parseInt(numberArr[i]);
+          }
+        }
     return sum;
-  }
+      }
+    }
 };
-
-
 
 module.exports = StringCalculator;
