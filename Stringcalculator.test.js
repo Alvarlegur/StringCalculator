@@ -14,3 +14,7 @@ test("one number in parameter", () => {
 test("Two numbers in parameter", () => {
   expect(string_calculator.Add("5,9")).toBe(14);
 });
+
+test("Unknown number of arguments in parameter", () => {
+  expect(string_calculator.Add("5,9,10,23,16")).toBe(63);
+});
