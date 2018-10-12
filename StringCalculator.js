@@ -5,6 +5,11 @@ var StringCalculator = {
     if (numbers == "") {
       return 0;
     }
+    else {
+      var sum = 0;
+      sum = numbers;
+    }
+    return sum;
   }
 };
 
