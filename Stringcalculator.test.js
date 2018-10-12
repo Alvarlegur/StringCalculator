@@ -27,6 +27,14 @@ test("Negative number in parameter", () => {
   expect(string_calculator.Add("-1,4")).toBe("Negatives not allowed: -1");
 });
 
+test("Two negative number in parameter", () => {
+  expect(string_calculator.Add("2,-4,3,-5")).toBe("Negatives not allowed: -4,-5");
+});
+
 test("Numbers bigger than 1000", () => {
   expect(string_calculator.Add("1003,4")).toBe(4);
 });
+
+//test("Different delimiter", () => {
+  //expect(string_calculator.Add("//;\n2;4")).toBe(6);
+//});
