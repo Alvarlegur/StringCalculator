@@ -22,3 +22,7 @@ test("Unknown number of arguments in parameter", () => {
 test("New lines between numbers in parameter", () => {
   expect(string_calculator.Add("5\n2,6")).toBe(13);
 });
+
+test("Negative number in parameter", () => {
+  expect(string_calculator.Add("-1,4")).toBe("Negatives not allowed: -1");
+});
