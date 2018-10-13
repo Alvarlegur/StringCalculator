@@ -11,7 +11,17 @@ var StringCalculator = {
       var negCounter = 0;
       var negStringList = [];
       var negArr = [];
-
+      if (numbers.startsWith("//"))
+      {
+        var delimiter = numbers.charAt(2);
+        var skip = numbers.substring(4);
+        var numArr = skip.split(delimiter);
+        var numSum = 0;
+        for(i = 0; i < numArr.length; i++){
+          numSum += parseInt(numArr[i]);
+        }
+        return numSum;
+      }
       if (numberArr.length == 1){
         sum = numberArr[0];
         return parseInt(sum);

@@ -35,6 +35,6 @@ test("Numbers bigger than 1000", () => {
   expect(string_calculator.Add("1003,4")).toBe(4);
 });
 
-//test("Different delimiter", () => {
-  //expect(string_calculator.Add("//;\n2;4")).toBe(6);
-//});
+test("Different delimiter", () => {
+  expect(string_calculator.Add("//;\n2;4")).toBe(6);
+});
